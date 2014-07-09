@@ -3,12 +3,13 @@ include:
 
 postgresql-server:
   pkg.installed:
-    - postgresql-9.3
-    - postgresql-dev-9.3
-    - postgresql-server-9.3
-    - postgresql-client-9.3
+    names:
+      - postgresql-9.3
+      - postgresql-dev-9.3
+      - postgresql-server-9.3
+      - postgresql-client-9.3
   service.running:
-    - postgresql
+    - name: postgresql
 
 gitlab-db:
   postgres_user.present:
