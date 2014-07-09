@@ -1,5 +1,4 @@
 include:
-  - postgresql
   {% if grains['os_family'] == 'RedHat' %}
   - gitlab.repos
   {% endif %}
