@@ -3,7 +3,7 @@ include:
 
 postgresql-server:
   pkg.installed:
-    names:
+    - names:
       - postgresql-9.3
       - postgresql-dev-9.3
       - postgresql-server-9.3
